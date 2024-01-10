@@ -114,3 +114,4 @@ app.get('/directors/:directorId/movies/', async (request, response) => {
   const result = await db.all(query)
   response.send(result.map(each => changing(each)))
 })
+module.exports=app
