@@ -37,7 +37,7 @@ const convertForMovie = dbObject => {
 app.get('/movies/', async (request, response) => {
   const query = `
     SELECT
-      *
+      movie_name
     FROM
       movie;`
   const result = await db.all(query)
